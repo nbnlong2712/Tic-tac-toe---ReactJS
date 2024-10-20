@@ -45,10 +45,10 @@ function Game() {
             desc = 'Jump to start';
         }
         else {
-            desc = `Jump to move (${location.row}, ${location.col})`;
+            desc = `Jump to move #${move} (${location.row}, ${location.col})`;
         }
         if (currentMove === move) {
-            desc = `You are at move (${location ? location.row : 0}, ${location ? location.col : 0})`;
+            desc = `You are at move #${move} (${location ? location.row : 0}, ${location ? location.col : 0})`;
             return <li key={move}>
                 <span>{desc}</span>
             </li>
