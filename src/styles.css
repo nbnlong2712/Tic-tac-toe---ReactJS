@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.square {
+  background: #fff;
+  border: 3px solid #999;
+  float: left;
+  margin: 2px;
+  font-size: 39px;
+  font-weight: bold;
+  line-height: 100px;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #242323cb;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 15px;
+  font-size: 34px;
+  font-weight: bold;
+  color: #242323cb;
+}
+
+.game {
+  display: flex;
+  justify-content: center;
+}
+
+.game-board {
+  margin-right: 20px;
+}
+
+.game-info {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.button-jump {
+  background-color: #62b6ff;
+  color: #fff;
+  margin: 3px;
+}
+
+ol {
+  text-align: left;
+  margin-left: 20px;
+}
+
+.isWinningSquare{
+  background-color: aqua;
+}
